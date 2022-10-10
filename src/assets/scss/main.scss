@@ -1,20 +1,22 @@
-@import "settings/_settings.colors.scss";
-@import "settings/_settings.grid.scss";
-@import "settings/_settings.fonts.scss";
-@import "settings/_settings.breakpoints.scss";
+@import "settings/_settings-colors.scss";
+@import "settings/_settings-grid.scss";
+@import "settings/_settings-fonts.scss";
+@import "settings/_settings-breakpoints.scss";
 
-@import "mixins/mixins.breakpoints.scss";
+@import "mixins/mixins-breakpoints.scss";
 
-@import "objects/objects.fluidimages.scss";
+@import "objects/objects-fluidimages.scss";
 
-@import "base/_base.fonts.scss";
-@import "base/_base.margins.scss";
-@import "base/_base.body.scss";
-@import "base/_base.forms.scss";
+@import "base/_base-fonts.scss";
+@import "base/_base-margins.scss";
+@import "base/_base-address.scss";
+@import "base/_base-body.scss";
+@import "base/_base-forms.scss";
 
-@import "layout/_layout.container.scss";
-@import "layout/_layout.grid.scss";
+@import "layout/_layout-container.scss";
+@import "layout/_layout-grid.scss";
 
-@import "components/_components.siteheader.scss";
-@import "components/_components.sitefooter.scss";
-@import "components/_components.titles.scss";
+@import "components/_components-siteheader.scss";
+@import "components/_components-sitefooter.scss";
+@import "components/_components-titles.scss";
+@import "components/_components-pagesection.scss";
