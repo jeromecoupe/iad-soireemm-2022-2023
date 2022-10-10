@@ -1,6 +1,10 @@
 {% macro itemSpeaker(name, surname, function, picture) %}
 <article>
-  <p><img src="/assets/img/speakers/{{ picture }}" alt=""></p>
+  <p>
+    <img src="/assets/img/speakers/{{ picture }}"
+         class="o-fluidimg"
+         alt="">
+  </p>
   <h2>{{ name }} {{ surname }}</h2>
   <p>{{ function }}</p>
 </article>
