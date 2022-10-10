@@ -2,5 +2,5 @@
 name: Martin
 surname: Manon
 picture: manon.jpg
-function: herder of cats
+function: Co-owner at Castar
 ---
