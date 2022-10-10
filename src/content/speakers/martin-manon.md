@@ -1,6 +1,6 @@
 ---
 name: Martin
 surname: Manon
-picture: placeholder.jpg
+picture: manon.jpg
 function: herder of cats
 ---

@@ -1,6 +1,6 @@
 ---
 name: Landmeters
 surname: Martin
-picture: placeholder.jpg
+picture: martin.jpg
 function: herder of cats
 ---

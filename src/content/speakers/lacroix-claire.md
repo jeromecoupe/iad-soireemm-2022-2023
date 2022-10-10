@@ -1,6 +1,6 @@
 ---
 name: Claire
 surname: Lacroix
-picture: placeholder.jpg
+picture: claire.jpg
 function: herder of cats
 ---

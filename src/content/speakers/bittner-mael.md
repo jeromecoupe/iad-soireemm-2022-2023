@@ -1,6 +1,6 @@
 ---
 name: Maël
 surname: Bittner
-picture: placeholder.jpg
+picture: mael.jpg
 function: herder of cats
 ---

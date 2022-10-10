@@ -1,6 +1,6 @@
 ---
 name: Borbé
 surname: Zoé
-picture: placeholder.jpg
+picture: zoe.jpg
 function: herder of cats
 ---
