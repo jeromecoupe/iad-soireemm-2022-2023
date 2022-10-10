@@ -4,6 +4,7 @@ permalink: index.html
 {% extends "layouts/base.njk" %}
 
 {% from "macros/itemSpeaker.njk" import itemSpeaker %}
+{% from "macros/itemReview.njk" import itemReview %}
 {% from "macros/itemSponsor.njk" import itemSponsor %}
 
 {% set metaTitle = "Home" %}
@@ -11,36 +12,79 @@ permalink: index.html
 {% set metaImage = site.metaImage %}
 
 {% block content %}
-  <div class="l-container">
-    <h1 class="c-h1">Spoirée Métiers MM</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste natus beatae optio molestiae. Vero asperiores dolorum distinctio. Facere perferendis, aspernatur dolores delectus laudantium quidem porro dolorum ad incidunt consequuntur in.</p>
-
-    <h2 class="c-h2">Estimés speakers</h2>
-    {% set allSpeakers = collections.speakers %}
-    {% for item in allSpeakers %}
-      {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@medium">{% endif %}
-        <li>
-          {{ itemSpeaker(
-            name = item.data.name,
-            surname = item.data.surname,
-            function = item.data.function,
-            picture = item.data.picture
-          ) }}
-        </li>
-      {% if loop.last %}</ul>{% endif %}
-    {% endfor %}
+  <div class="c-pagesection">
+    <div class="l-container">
+      <h1 class="c-pagetitle">Faites ce que je dis, pas ce que je fais.</h1>
+      <h2 class="c-pagesubtitle">Soirée métiers multimédia, deuxième édition, 2022-2023</h2>
+    </div>
   </div>
-  <div class="l-container">
-    <h2 class="c-h2">Sponsors</h2>
-    {% for item in sponsors %}
-      {% if loop.first %}<ul>{% endif %}
-        <li>
-          {{ itemSponsor(
-            name = item.name,
-            logo = item.logo
-          ) }}
-        </li>
-      {% if loop.last %}</ul>{% endif %}
-    {% endfor %}
+  
+  <div class="c-pagesection">
+    <div class="l-container">
+      <h3 class="c-h3">Speakers</h3>
+      <p>Ils sont venu vous parler de ce qu'ils font toute la sainte journée, vous raconter dans quels tapis ils se sont pris les pieds (pour vous éviter d'en faire autant) et discuter autour de quelques verres en bonne compagnie.</p>
+      {% set allSpeakers = collections.speakers %}
+      {% for item in allSpeakers %}
+        {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@medium">{% endif %}
+          <li>
+            {{ itemSpeaker(
+              picture = item.data.picture,
+              name = item.data.name,
+              surname = item.data.surname,
+              function = item.data.function,
+              company = item.data.company
+            ) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="c-pagesection">
+    <div class="l-container">
+      <h3 class="c-h3">Informations</h3>
+      <p>
+        17 novembre 2022<br>
+        Entrée gratuite<br>
+        Réservation obligatoire
+      </p>
+      <address>
+        Institut des Arts de Diffusion<br>
+        Route de Blocry, 5<br>
+        1340 Louvain-la-Neuve
+      </address>
+    </div>
+  </div>
+
+  <div class="c-pagesection">
+    <div class="l-container">
+      <h3 class="c-h3">Reviews</h3>
+      {% for item in reviews %}
+        {% if loop.first %}<ul>{% endif %}
+          <li>
+            {{ itemReview(
+              text = item.text,
+              author = item.author
+            ) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="c-pagesection">
+    <div class="l-container">
+      <h2 class="c-h2">Sponsors</h2>
+      {% for item in sponsors %}
+        {% if loop.first %}<ul>{% endif %}
+          <li>
+            {{ itemSponsor(
+              name = item.name,
+              logo = item.logo
+            ) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
   </div>
 {% endblock %}
