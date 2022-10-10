@@ -4,6 +4,7 @@ permalink: index.html
 {% extends "layouts/base.njk" %}
 
 {% from "macros/itemSpeaker.njk" import itemSpeaker %}
+{% from "macros/itemSponsor.njk" import itemSponsor %}
 
 {% set metaTitle = "Home" %}
 {% set metaDescription = "This is an SEO description for this page" %}
@@ -11,16 +12,32 @@ permalink: index.html
 
 {% block content %}
   <div class="l-container">
-    <h1 class="c-h1">Homepage</h1>
+    <h1 class="c-h1">Spoirée Métiers MM</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste natus beatae optio molestiae. Vero asperiores dolorum distinctio. Facere perferendis, aspernatur dolores delectus laudantium quidem porro dolorum ad incidunt consequuntur in.</p>
+
+    <h2 class="c-h2">Estimés speakers</h2>
     {% set allSpeakers = collections.speakers %}
     {% for item in allSpeakers %}
-      {% if loop.first %}<ul>{% endif %}
+      {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@medium">{% endif %}
         <li>
           {{ itemSpeaker(
             name = item.data.name,
             surname = item.data.surname,
             function = item.data.function,
             picture = item.data.picture
+          ) }}
+        </li>
+      {% if loop.last %}</ul>{% endif %}
+    {% endfor %}
+  </div>
+  <div class="l-container">
+    <h2 class="c-h2">Sponsors</h2>
+    {% for item in sponsors %}
+      {% if loop.first %}<ul>{% endif %}
+        <li>
+          {{ itemSponsor(
+            name = item.name,
+            logo = item.logo
           ) }}
         </li>
       {% if loop.last %}</ul>{% endif %}

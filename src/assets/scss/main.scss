@@ -1,4 +1,5 @@
 @import "settings/_settings.colors.scss";
+@import "settings/_settings.grid.scss";
 @import "settings/_settings.fonts.scss";
 @import "settings/_settings.breakpoints.scss";
 
@@ -12,6 +13,7 @@
 @import "base/_base.forms.scss";
 
 @import "layout/_layout.container.scss";
+@import "layout/_layout.grid.scss";
 
 @import "components/_components.siteheader.scss";
 @import "components/_components.sitefooter.scss";
