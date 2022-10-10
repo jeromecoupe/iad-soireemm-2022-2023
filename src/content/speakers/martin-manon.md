@@ -1,6 +1,7 @@
 ---
-name: Martin
-surname: Manon
+name: Manon
+surname: Martin
+function: VFX supervisor and co-owner
+company: Castar
 picture: manon.jpg
-function: Co-owner at Castar
 ---

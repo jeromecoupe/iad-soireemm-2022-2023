@@ -1,6 +1,7 @@
 ---
 name: Claire
 surname: Lacroix
-picture: claire.jpg
 function: Product designer
+company: Cap Gemini
+picture: claire.jpg
 ---

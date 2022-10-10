@@ -1,6 +1,7 @@
 ---
-name: Borbé
-surname: Zoé
+name: Zoé
+surname: Borbé
+function: Animatrice 2D
+company: Freelance
 picture: zoe.jpg
-function: Animatrice et illustratrice
 ---
