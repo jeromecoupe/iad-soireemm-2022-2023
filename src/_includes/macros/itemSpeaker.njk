@@ -1,0 +1,7 @@
+{% macro itemSpeaker(name, surname, function, picture) %}
+<article>
+  <p><img src="/assets/img/speakers/{{ picture }}" alt=""></p>
+  <h2>{{ name }} {{ surname }}</h2>
+  <p>{{ function }}</p>
+</article>
+{% endmacro %}

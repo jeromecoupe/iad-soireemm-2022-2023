@@ -1,0 +1,29 @@
+---
+permalink: index.html
+---
+{% extends "layouts/base.njk" %}
+
+{% from "macros/itemSpeaker.njk" import itemSpeaker %}
+
+{% set metaTitle = "Home" %}
+{% set metaDescription = "This is an SEO description for this page" %}
+{% set metaImage = site.metaImage %}
+
+{% block content %}
+  <div class="l-container">
+    <h1 class="c-h1">Homepage</h1>
+    {% set allSpeakers = collections.speakers %}
+    {% for item in allSpeakers %}
+      {% if loop.first %}<ul>{% endif %}
+        <li>
+          {{ itemSpeaker(
+            name = item.data.name,
+            surname = item.data.surname,
+            function = item.data.function,
+            picture = item.data.picture
+          ) }}
+        </li>
+      {% if loop.last %}</ul>{% endif %}
+    {% endfor %}
+  </div>
+{% endblock %}

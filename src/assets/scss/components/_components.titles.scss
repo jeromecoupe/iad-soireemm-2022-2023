@@ -1,0 +1,15 @@
+// ----------------------------------
+// =titles
+// ----------------------------------
+
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4 {
+  font-weight: 600;
+  font-family: var(--fontstack-main);
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+}
+
+/* @TODO: titles with clamp */

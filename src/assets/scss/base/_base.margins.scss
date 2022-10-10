@@ -1,0 +1,6 @@
+*,
+*::before,
+*::after {
+  margin-top: 0;
+  margin-bottom: calc(24 / 16 * 1rem);
+}
