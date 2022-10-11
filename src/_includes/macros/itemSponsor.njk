@@ -1,5 +1,11 @@
-{% macro itemSponsor(name, logo) %}
-<article>
-  <img class="o-fluidimg" src="/assets/img/sponsors/{{ logo }}" alt="{{ name }}">
+{% macro itemSponsor(name, url, logo) %}
+<article class="c-sponsor">
+  <a href="{{ url }}" class="c-sponsor__link">
+    <img src="/assets/img/sponsors/{{ logo }}"
+         class="c-sponsor__logo  o-fluidimg"
+         loading="lazy"
+         decoding="async"
+         alt="{{ name }}">
+  </a>
 </article>
 {% endmacro %}

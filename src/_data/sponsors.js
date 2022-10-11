@@ -1,11 +1,23 @@
 const sponsors = [
   {
-    name: "Mon super Sponsor",
-    logo: "placeholder.jpg",
+    name: "Institut des Arts de Diffusion",
+    logo: "iad_logo.png",
+    url: "https://www.iad-arts.be",
   },
   {
-    name: "Sponsor",
-    logo: "placeholder.jpg",
+    name: "Sowalfin",
+    logo: "sowalfin_logo.png",
+    url: "https://www.sowalfin.be",
+  },
+  {
+    name: "Générations entreprenantes",
+    logo: "generations_entreprenantes_logo.png",
+    url: "https://www.sowalfin.be/GE/",
+  },
+  {
+    name: "Le CLub",
+    logo: "le_club_logo.png",
+    url: "https://www.iad-arts.be",
   },
 ];
 
