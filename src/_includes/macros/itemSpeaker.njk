@@ -1,11 +1,13 @@
 {% macro itemSpeaker(picture, name, surname, function, company) %}
 <article class="c-speaker">
-  <p class="c-speaker__image">
+  <p class="c-speaker__media">
     <img src="/assets/img/speakers/{{ picture }}"
-         class="o-fluidimg"
+         class="c-speaker__img  o-fluidimg"
          alt="">
   </p>
-  <h4 class="c-speaker__name">{{ name }} {{ surname }}</h4>
-  <p class="c-speaker__description">{{ function }}, {{ company }}</p>
+  <div class="c-speaker__body">
+    <h4 class="c-speaker__title">{{ name }} {{ surname }}</h4>
+    <p class="c-speaker__description">{{ function }}, {{ company }}</p>
+  </div>
 </article>
 {% endmacro %}

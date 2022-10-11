@@ -1,7 +1,7 @@
 ---
 name: Martin
 surname: Landmeeters
-function: Montion designer
+function: Motion designer
 company: Geometry
 picture: martin.jpg
 ---

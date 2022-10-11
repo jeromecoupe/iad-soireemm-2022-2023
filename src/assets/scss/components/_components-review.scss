@@ -1,0 +1,28 @@
+// =================================
+// =review
+// =================================
+
+.c-review {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(6 / 16 * 1rem);
+}
+
+.c-review__quote {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c-review__quote > p:last-child {
+  margin: 0;
+}
+
+.c-review__author {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}

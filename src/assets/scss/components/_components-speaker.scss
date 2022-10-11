@@ -1,0 +1,36 @@
+// =================================
+// =speaker
+// =================================
+
+.c-speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(24 / 16 * 1rem);
+}
+
+.c-speaker__media {
+  position: relative;
+  margin: 0;
+  background-color: var(--color-brand);
+}
+
+.c-speaker__img {
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+}
+
+.c-speaker__title {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: calc(18 / 16 * 1rem);
+  margin-block-end: calc(3 / 16 * 1rem);
+}
+
+.c-speaker__description {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-block-end: 0;
+}

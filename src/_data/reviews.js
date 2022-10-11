@@ -1,6 +1,6 @@
 const reviews = [
   {
-    text: "Au moins, on est certains d'avoir une bonne sélection de bières belges lors d'une soirée IAD",
+    text: "Au moins, on est certains d'avoir une bonne sélection de bières belges.",
     author: "Jérôme Coupé",
   },
   {
@@ -16,7 +16,7 @@ const reviews = [
     author: "Caroline Voglaire",
   },
   {
-    text: "Pour une fois, je peux vous dire que faire la route depuis St Hubert, c'est passé comme une lettre à la poste.",
+    text: "Pour une fois, je fais la route depuis St Hubert pour aller écouter plutôt que pour parler. Tof!",
     author: "Sylvia Minnaerts",
   },
   {
