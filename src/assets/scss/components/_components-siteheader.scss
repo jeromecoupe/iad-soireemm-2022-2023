@@ -3,6 +3,69 @@
 // =================================
 
 .c-siteheader {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-block: calc(84 / 16 * 1rem);
+  }
+}
+
+.c-siteheader__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(6 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.c-siteheader__info {
+  @include breakpoint(medium) {
+    margin-inline-end: auto;
+  }
+}
+
+.c-siteheader__title {
+  margin-block-end: calc(3 / 16 * 1rem);
+  font-weight: 500;
+  font-size: calc(18 / 16 * 1rem);
+  color: var(--color-white);
+}
+
+.c-siteheader__subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.c-siteheader__date {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(12 / 16 * 1rem);
+
+  font-weight: 500;
+  font-size: calc(18 / 16 * 1rem);
+  color: var(--color-white);
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-brand);
+
+    @include breakpoint(medium) {
+      width: 42px;
+    }
+  }
 }
