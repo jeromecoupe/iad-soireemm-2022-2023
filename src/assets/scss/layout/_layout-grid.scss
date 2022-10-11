@@ -1,10 +1,10 @@
-/* ---------------------------------
-=grid
---------------------------------- */
+// =================================
+// =grid
+// =================================
 
-/* ---------------------------------
-=variables
---------------------------------- */
+// =================================
+// =variables
+// =================================
 
 $breakpoints-map: (
   "small": "all and (min-width: 500px)",
@@ -13,9 +13,9 @@ $breakpoints-map: (
   "xlarge": "all and (min-width: 1440px)",
 ) !default;
 
-// ---------------------------------
+// =================================
 // =base classes
-// ---------------------------------
+// =================================
 
 .l-grid {
   list-style: none;
@@ -24,7 +24,7 @@ $breakpoints-map: (
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--grid-gutter);
+  gap: var(--gutter);
 }
 
 // columns
@@ -44,9 +44,9 @@ $breakpoints-map: (
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-// ---------------------------------
+// =================================
 // =responsive classes
-// ---------------------------------
+// =================================
 
 @each $name, $query in $breakpoints-map {
   @media #{$query} {
