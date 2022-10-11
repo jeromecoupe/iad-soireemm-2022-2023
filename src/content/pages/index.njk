@@ -18,7 +18,7 @@ permalink: index.html
       <div class="c-pagetitle">
         <div class="c-pagetitle__content">
           <h1 class="c-pagetitle__main">Faites ce que je dis, pas ce que je fais!</h1>
-          <h2 class="c-pagetitle__subtitle">Soirée métiers multimédia, deuxième édition, 2022-2023</h2>
+          <h2 class="c-pagetitle__subtitle">Soirée métiers multimédia, édition 2022-2023</h2>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ permalink: index.html
       </div>
       <div class="l-grid  l-grid--colgap  l-grid--2cols@medium">
         <p>
-          17 novembre 2022<br>
+          17 novembre 2022 à 19h00<br>
           Entrée gratuite<br>
           <a href="#">Réservation obligatoire</a>
         </p>
@@ -108,7 +108,7 @@ permalink: index.html
       </div>
       <div>
         {% for item in sponsors %}
-          {% if loop.first %}<ul>{% endif %}
+          {% if loop.first %}<ul class="c-sponsors">{% endif %}
             <li>
               {{ itemSponsor(
                 name = item.name,

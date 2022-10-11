@@ -1,6 +1,6 @@
 const reviews = [
   {
-    text: "Au moins, on est certains d'avoir une bonne sélection de bières belges.",
+    text: "Au moins maintenant, on est certains d'avoir une bonne sélection de bières belges.",
     author: "Jérôme Coupé",
   },
   {
@@ -40,7 +40,7 @@ const reviews = [
     author: "Damien Welsh",
   },
   {
-    text: "Comme quoi, jouer du piano avec des bananes au cours, cela peut parfois mener très loin.",
+    text: "Comme quoi, jouer du piano avec des bananes au cours, cela peut effectivement mener loin.",
     author: "Julien Moreau",
   },
 ];

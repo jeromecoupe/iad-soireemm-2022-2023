@@ -26,3 +26,9 @@
   font-size: 1rem;
   color: var(--color-text-muted);
 }
+
+.c-review__author::before {
+  content: "\2014";
+  display: inline-block;
+  margin-inline-end: calc(6 / 16 * 1rem);
+}

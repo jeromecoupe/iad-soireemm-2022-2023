@@ -11,12 +11,12 @@
 
   @include breakpoint(medium) {
     flex-direction: row;
-    gap: calc(60 / 16 * 1rem);
+    gap: calc(42 / 16 * 1rem);
   }
 
   @include breakpoint(large) {
     flex-direction: row;
-    gap: calc(90 / 16 * 1rem);
+    gap: calc(60 / 16 * 1rem);
   }
 }
 

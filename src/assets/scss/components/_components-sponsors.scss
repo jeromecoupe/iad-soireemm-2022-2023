@@ -1,0 +1,13 @@
+// =================================
+// =list sponsors
+// =================================
+
+.c-sponsors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--gutter);
+}
