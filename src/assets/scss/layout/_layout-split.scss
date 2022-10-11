@@ -4,6 +4,10 @@
 
 .l-split {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 6fr);
-  gap: var(--gutter);
+  grid-template-columns: minmax(0, 1fr);
+
+  @include breakpoint(medium) {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 6fr);
+    gap: var(--gutter);
+  }
 }

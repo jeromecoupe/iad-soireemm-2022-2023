@@ -24,7 +24,19 @@ $breakpoints-map: (
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+}
+
+// gaps
+.l-grid--gap {
   gap: var(--gutter);
+}
+
+.l-grid--colgap {
+  column-gap: var(--gutter);
+}
+
+.l-grid--rowgap {
+  row-gap: var(--gutter);
 }
 
 // columns
@@ -41,7 +53,7 @@ $breakpoints-map: (
 }
 
 .l-grid--auto {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 // =================================
