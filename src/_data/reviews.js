@@ -16,7 +16,7 @@ const reviews = [
     author: "Caroline Voglaire",
   },
   {
-    text: "Pour une fois, je fais la route depuis St Hubert pour aller écouter plutôt que pour parler. Tof!",
+    text: "Pour une fois, je fais la route depuis St Hubert pour écouter plutôt que pour parler. Tof!",
     author: "Sylvia Minnaerts",
   },
   {
