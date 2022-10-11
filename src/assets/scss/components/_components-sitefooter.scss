@@ -3,8 +3,12 @@
 // =================================
 
 .c-sitefooter {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  display: block;
+}
+
+.c-sitefooter__content {
+  padding-block: calc(24 / 16 * 1rem);
+  border-block-start: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .c-sitefooter__copyright {

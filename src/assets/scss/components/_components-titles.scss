@@ -9,7 +9,38 @@
   font-weight: 600;
   font-family: var(--fontstack-main);
   line-height: 1.2;
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
+  color: var(--color-white);
 }
 
-/* @TODO: titles with clamp */
+.c-h2 {
+  font-size: calc(23 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(25 / 16 * 1rem);
+  }
+}
+
+.c-h2 {
+  font-size: calc(20 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(23 / 16 * 1rem);
+  }
+}
+
+.c-h3 {
+  font-size: calc(18 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(20 / 16 * 1rem);
+  }
+}
+
+.c-h4 {
+  font-size: calc(16 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(18 / 16 * 1rem);
+  }
+}
