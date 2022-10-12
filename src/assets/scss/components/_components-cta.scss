@@ -1,0 +1,15 @@
+// =================================
+// =call to action
+// =================================
+
+.c-cta {
+  display: inline-block;
+  padding-block-end: calc(2 / 16 * 1rem);
+  border-block-end: 2px solid var(--color-text-muted);
+  text-decoration: none;
+}
+
+.c-cta:hover,
+.c-cta:focus {
+  border-color: var(--color-brand);
+}

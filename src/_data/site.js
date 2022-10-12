@@ -6,4 +6,5 @@ module.exports = {
   authorName: "IAD MM",
   authorTwitter: "@jeromecoupe",
   buildDate: new Date(),
+  reservations: true,
 };

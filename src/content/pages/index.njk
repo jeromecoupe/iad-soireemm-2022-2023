@@ -32,7 +32,7 @@ permalink: index.html
       </div>
       <div class="c-pageintro">
         <p>Préparez vous à revivre les grandes heures du mythique 022, à découvrir l'origine des écarts de température à Athéna, l'époque à laquelle Jérôme avait des cheveux ...</p>
-        <p>Dans ce lieu magique qu'est la grande salle de Blocry, 5 anciens multimédias partegerons avec vous leurs parcours, leurs joies et leurs peines.</p>
+        <p>Dans ce lieu magique qu'est la grande salle de Blocry, 5 anciens multimédias partageront avec vous leurs parcours, leurs joies et leurs peines.</p>
       </div>
     </div>
   </div>
@@ -66,17 +66,26 @@ permalink: index.html
       <div>
         <h3 class="c-h3">Informations</h3>
       </div>
-      <div class="l-grid  l-grid--colgap  l-grid--2cols@medium">
-        <p>
-          17 novembre 2022 à 19h00<br>
-          Entrée gratuite<br>
-          <a href="#">Réservation obligatoire</a>
-        </p>
-        <address>
-          Institut des Arts de Diffusion<br>
-          Route de Blocry, 5<br>
-          1340 Louvain-la-Neuve
-        </address>
+      <div>
+        <div class="l-grid  l-grid--colgap  l-grid--2cols@medium">
+          <div>
+            <p>
+              17 novembre 2022<br>
+              19h00 - 23h30<br>
+              Entrée gratuite
+            </p>
+          </div>
+          <div>
+            <address>
+              <p>Institut des Arts de Diffusion<br>
+              Route de Blocry, 5<br>
+              1340 Louvain-la-Neuve</p>
+            </address>
+          </div>
+        </div>
+        {% if site.reservations %}
+          <p><a class="c-cta" href="#">Réservation obligatoire</a></p>
+        {% endif %}
       </div>
     </div>
   </div>
