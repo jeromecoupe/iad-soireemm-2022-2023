@@ -93,26 +93,6 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Reviews</h3>
-      </div>
-      <div>
-        {% for item in reviews %}
-          {% if loop.first %}<ul class="l-grid  l-grid--gap  l-grid--auto">{% endif %}
-            <li>
-              {{ itemReview(
-                text = item.text,
-                author = item.author
-              ) }}
-            </li>
-          {% if loop.last %}</ul>{% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  
-  <div class="c-pagesection">
-    <div class="l-container  l-split">
-      <div>
         <h3 class="c-h3">Sponsors</h3>
       </div>
       <div>
@@ -130,4 +110,25 @@ permalink: index.html
       </div>
     </div>
   </div>
+
+  <div class="c-pagesection">
+    <div class="l-container  l-split">
+      <div>
+        <h3 class="c-h3">Reviews</h3>
+      </div>
+      <div>
+        {% for item in reviews %}
+          {% if loop.first %}<ul class="l-grid  l-grid--gap  l-grid--auto">{% endif %}
+            <li>
+              {{ itemReview(
+                text = item.text,
+                author = item.author
+              ) }}
+            </li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
 {% endblock %}
