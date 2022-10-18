@@ -33,7 +33,7 @@ const reviews = [
   },
   {
     text: "En tous cas ces multimédia ce sont des durs à cuire!",
-    author: "La chauffagiste d'Athéna",
+    author: "Le chauffagiste d'Athéna",
   },
   {
     text: "C'est le genre de soirée pendant laquelle les VFX se produisent spontanément.",
