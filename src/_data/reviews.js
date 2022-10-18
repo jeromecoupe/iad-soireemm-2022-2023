@@ -4,7 +4,7 @@ const reviews = [
     author: "Jérôme Coupé",
   },
   {
-    text: "Depuis qu'ils ont gagné les olympiades, ils ont pris le melon. Ils organisent même des soirées rien que pour eux, maintenant.",
+    text: "Depuis qu'ils ont gagné les olympiades, ils ont pris le melon. Ils organisent même des soirées maintenant ...",
     author: "Anonyme",
   },
   {
