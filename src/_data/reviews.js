@@ -4,7 +4,7 @@ const reviews = [
     author: "Jérôme Coupé",
   },
   {
-    text: "Depuis qu'ils ont gagné les olympiades, ils organisent des soirées rien que pour eux.",
+    text: "Depuis qu'ils ont gagné les olympiades, ils ont pris le melon. Ils organisent même des soirées rien que pour eux, maintenant.",
     author: "Anonyme",
   },
   {
@@ -32,7 +32,7 @@ const reviews = [
     author: "Etienne Baffrey",
   },
   {
-    text: "En tous cas ces multimédia ce sont des durs à cuire.",
+    text: "En tous cas ces multimédia ce sont des durs à cuire!",
     author: "La chauffagiste d'Athéna",
   },
   {
