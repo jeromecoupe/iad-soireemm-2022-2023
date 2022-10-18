@@ -1,6 +1,6 @@
 const reviews = [
   {
-    text: "Au moins maintenant, on est certains d'avoir une bonne sélection de bières belges.",
+    text: "Au moins, comme ça, on est certains d'avoir une bonne sélection de bières belges.",
     author: "Jérôme Coupé",
   },
   {
