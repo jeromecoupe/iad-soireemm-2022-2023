@@ -2,6 +2,15 @@
 // =speaker
 // =================================
 
+@keyframes scan {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -6000px;
+  }
+}
+
 .c-speaker {
   display: flex;
   flex-direction: column;
@@ -14,6 +23,23 @@
   position: relative;
   margin: 0;
   background-color: var(--color-brand);
+  overflow: hidden;
+}
+
+.c-speaker__media::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/scanner.svg);
+  background-repeat: no-repeat;
+  animation: scan;
+  animation-duration: 2.4s;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+  opacity: 0.4;
 }
 
 .c-speaker__img {

@@ -28,7 +28,7 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Soirée</h3>
+        <h3 class="c-h4">Soirée</h3>
       </div>
       <div class="c-pageintro">
         <p>Préparez vous à revivre les grandes heures du mythique 022, à découvrir l'origine des écarts de température à Athéna, l'époque à laquelle Jérôme avait des cheveux ...</p>
@@ -40,7 +40,7 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Speakers</h3>
+        <h3 class="c-h4">Speakers</h3>
       </div>
       <div>
         {% set allSpeakers = collections.speakers %}
@@ -52,7 +52,8 @@ permalink: index.html
                 name = item.data.name,
                 surname = item.data.surname,
                 function = item.data.function,
-                company = item.data.company
+                company = item.data.company,
+                index = loop.index
               ) }}
             </li>
           {% if loop.last %}</ul>{% endif %}
@@ -64,7 +65,7 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Informations</h3>
+        <h3 class="c-h4">Informations</h3>
       </div>
       <div>
         <div class="l-grid  l-grid--colgap  l-grid--2cols@medium">
@@ -93,7 +94,7 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Sponsors</h3>
+        <h3 class="c-h4">Sponsors</h3>
       </div>
       <div>
         {% for item in sponsors %}
@@ -114,7 +115,7 @@ permalink: index.html
   <div class="c-pagesection">
     <div class="l-container  l-split">
       <div>
-        <h3 class="c-h3">Reviews</h3>
+        <h3 class="c-h4">Reviews</h3>
       </div>
       <div>
         {% for item in reviews %}
