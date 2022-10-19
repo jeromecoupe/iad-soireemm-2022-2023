@@ -2,6 +2,10 @@
 // =titles
 // =================================
 
+/*
+https://www.modularscale.com/?18&px&1.125
+*/
+
 .c-h1,
 .c-h2,
 .c-h3,
@@ -13,15 +17,23 @@
   color: var(--color-white);
 }
 
-.c-h2 {
-  font-size: calc(23 / 16 * 1rem);
+.c-h1 {
+  font-size: calc(26 / 16 * 1rem);
 
   @include breakpoint(medium) {
-    font-size: calc(25 / 16 * 1rem);
+    font-size: calc(29 / 16 * 1rem);
   }
 }
 
 .c-h2 {
+  font-size: calc(23 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(26 / 16 * 1rem);
+  }
+}
+
+.c-h3 {
   font-size: calc(20 / 16 * 1rem);
 
   @include breakpoint(medium) {
@@ -29,18 +41,10 @@
   }
 }
 
-.c-h3 {
+.c-h4 {
   font-size: calc(18 / 16 * 1rem);
 
   @include breakpoint(medium) {
     font-size: calc(20 / 16 * 1rem);
-  }
-}
-
-.c-h4 {
-  font-size: calc(16 / 16 * 1rem);
-
-  @include breakpoint(medium) {
-    font-size: calc(18 / 16 * 1rem);
   }
 }
